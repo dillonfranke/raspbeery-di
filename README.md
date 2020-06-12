@@ -6,4 +6,4 @@ Beer Die is one of mankind's greatest innovations. We wanted to take our game to
 #### Project Description
 View our detailed product schematic below:
 
-[Raspbeery Di Schematic](https://raw.githubusercontent.com/dillonfranke/raspbeery-di/master/Raspbeery_Di_Project_Schematic.png)
+<img src="https://raw.githubusercontent.com/dillonfranke/raspbeery-di/master/Raspbeery_Di_Project_Schematic.png" height="200" alt="Raspbeery Di Schematic">
