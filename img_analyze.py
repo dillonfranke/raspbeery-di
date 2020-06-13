@@ -9,6 +9,6 @@ import matplotlib.pyplot as plt
 
 die_table = io.imread('imgs/IMG_2834.jpg')
 
-# edges = filters.sobel(die_table)
+edges = filters.sobel(die_table)
 
 io.imsave('test2.png', edges)
