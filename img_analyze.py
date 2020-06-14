@@ -5,21 +5,30 @@ from skimage import io
 from skimage import data
 import numpy as np
 import matplotlib.pyplot as plt
+from collections import Counter
+import math
 
 
-<<<<<<< HEAD
-die_table = io.imread('imgs/IMG_2834.jpg', as_gray=True)
-filters.sobel(die_table)
-io.imsave('test2.png', edges)
-=======
+def find_x(yellow_rows):
+    edges = io.imread('imgs/edge_detect.png')
+    row_color = []
+    for i in range(edges.shape[0]):
+        row_color.append(np.sum(edges[0][i])-255)
+    print()
+    x_val = 0
+    for x in row_counts.keys():
+        count = row_counts[x]
+
+
 die_table = io.imread('imgs/IMG_2834.jpg')
 
 num = 0
-for x in die_table:
-    for y in x:
-        if y[1] > 180:
-            num += 1
-        
+yellow_cols = []
+yellow_rows = []
+for x in range(die_table.shape[0]):
+    for y in range(die_table.shape[1]):
+        if die_table[x][y][1] > 180:
+            yellow_rows.append(x)
+            yellow_cols.append(y)
 
-print(num)
->>>>>>> 973d82dbd2e249c30f1235cc211b06bbe14b2793
+find_x(yellow_rows)
