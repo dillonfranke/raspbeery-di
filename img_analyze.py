@@ -7,9 +7,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
 die_table = io.imread('imgs/IMG_2834.jpg')
 
-edges = filters.sobel(die_table)
+num = 0
+for x in die_table:
+    for y in x:
+        if y[1] > 180:
+            num += 1
+        
 
-io.imsave('test2.png', edges)
+print(num)
