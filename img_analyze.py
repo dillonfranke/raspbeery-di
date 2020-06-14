@@ -7,9 +7,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
-die_table = io.imread('imgs/IMG_2834.jpg')
-
-edges = filters.sobel(die_table)
-
+die_table = io.imread('imgs/IMG_2834.jpg', as_gray=True)
+filters.sobel(die_table)
 io.imsave('test2.png', edges)
